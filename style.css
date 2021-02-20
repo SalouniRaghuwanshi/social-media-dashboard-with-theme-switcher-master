@@ -1,0 +1,13 @@
+:root{
+    --clr-background:white;
+    --clr-base:black;
+    --clr-primary:blue;
+    --clr-gray:gray;
+    
+}
+.dark-mode1{
+    --clr-background:white;
+    --clr-base:black;
+    --clr-primary:blue;
+    --clr-gray:gray;
+}
