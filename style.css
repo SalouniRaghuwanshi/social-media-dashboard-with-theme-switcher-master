@@ -1,13 +1,24 @@
-:root{
-    --clr-background:white;
-    --clr-base:black;
-    --clr-primary:blue;
-    --clr-gray:gray;
-    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.dark-mode1{
-    --clr-background:white;
-    --clr-base:black;
-    --clr-primary:blue;
-    --clr-gray:gray;
+body{
+background-color: aliceblue;
+}
+.dark-mode{
+position: absolute;
+transform: translate(-50%,-50%);
+margin-top: 10vw;
+margin-left: 10vw;
+}
+.check
+{
+    position: relative;
+    width: 3vw;
+    height: 1.5vw;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333,#000);
+    outline: none;
+    border-radius: 3vw;
 }
