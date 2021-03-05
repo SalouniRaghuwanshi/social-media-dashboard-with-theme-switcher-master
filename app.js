@@ -1,18 +1,18 @@
-var checkbox = document.querySelector('input[name=theme]');
-
-checkbox.addEventListener('change', function() {
-    if(this.checked) {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-})
-
-let trans = () => {
-    document.documentElement.classList.add('transition');
-    window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-    }, 1000)
-}
+  
+document.querySelector("input").addEventListener("click", function(){
+    $("body").toggleClass("dark-body");
+    $(".block").toggleClass("block-bg");
+    $(".block").toggleClass("block-bg-dark");
+    $(".facebook").toggleClass("dark-card");
+    $(".twitter").toggleClass("dark-card");
+    $(".instagram").toggleClass("dark-card");
+    $(".youtube").toggleClass("dark-card");
+    $(".overview-items").toggleClass("dark-card");
+    $(".facebook").toggleClass("background-white");
+    $(".twitter").toggleClass("background-white");
+    $(".instagram").toggleClass("background-white");
+    $(".youtube").toggleClass("background-white");
+    $(".overview-items").toggleClass("background-white");
+    $(".head1").toggleClass("dark-white");
+  
+  });

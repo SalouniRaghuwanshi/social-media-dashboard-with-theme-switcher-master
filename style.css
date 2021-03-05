@@ -1,46 +1,295 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 body{
-background-color: hsl(0, 0%, 100%);
-}
+    font-family: 'Inter', sans-serif;
+    /* position: relative; */
+  }
+  .block{
+    z-index: -10;
+    height: 14vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .block-bg{
+    background: hsl(225, 100%, 98%);
+  }
+  .block-bg-dark{
+    background: hsl(232, 19%, 15%);
+  }
+  .dark-body{
+    background-color: hsl(230, 17%, 14%);
+  }
+  .dark{
+    color: hsl(228, 34%, 66%);
+  }
+  .dark-white{
+    color: white;
+  }
+  .dark-card{
+    background: hsl(228, 28%, 20%);
+    color: white;
+  }
+  .card{
+  width: 70vw;
+    margin:  auto;
+  }
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .head1{
+    margin-bottom: 0;
+	font-size: 2vw;
+  }
+  .head2{
+    margin-top: 0;
+    font-size: 1vw;
+  }
+  .darkmode{
+    position: relative;
+  }
+  .text1{
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    top: 2vw;
+    right: 4vw;
+	font-size: 1.2vw;
+	color:  hsl(227, 47%, 96%);
+  }
+  .modeswitch{
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    top: 2.7vw;
+    right: 0;
+  }
+  .socialacc{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    text-align: center;
+  }
+  .facebook{
+    /* background: hsl(227, 47%, 96%); */
+    border-top: solid 5px hsl(208, 92%, 53%);
+    border-radius: 5px;
+  }
+  .twitter{
+    /* background: hsl(227, 47%, 96%); */
+    border-top: solid 5px hsl(203, 89%, 53%);
+    border-radius: 5px;
+  }
+  .instagram{
+    position: relative;
+    /* background: hsl(227, 47%, 96%); */
+    border-radius: 5px;
+  }
+  .line{
+    position: absolute;
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    height: 5px;
+    width: 100%;
+    top: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .youtube{
+    /* background: hsl(227, 47%, 96%); */
+    border-top: solid 5px hsl(348, 97%, 39%);
+    border-radius: 5px;
+  }
+  .t1{
+    font-size: 14px;
+    position: relative;
+  }
+  .logo{
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
+  .t2{
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .t3{
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .t4{
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .red{
+    color: hsl(356, 69%, 56%);
+    font-weight: 700;
+  }
+  .green{
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+  }
+  .arrow{
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+  }
+  .bold{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  .shade{
+    color: hsl(228, 12%, 44%);
+    font-weight: 600;
+  }
+  .subhead{
+    margin: 40px auto 20px;
+    font-size: 1.5rem;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+  }
+  .overview{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .overview-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    /* background: hsl(227, 47%, 96%); */
+    border-radius: 5px;
+  }
+  .background-white{
+    background: hsl(227, 47%, 96%);
+  }
+  .align-right{
+    text-align: right;
+  }
+  .attribution{
+    position: absolute;
+    display: block;
+    width: 99%;
+    margin: auto;
+    bottom: 10px;
+  }
+  
+  /* Togglebutton */
+  /* The switch - the box around the slider */
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:hover{
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    /* background-color: #2196F3; */
+  
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  
+  /* Rounded sliders */
 
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
-}
+  .slider.round {
+    border-radius: 14px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 52px;
-	height: 27px;
-	background: grey;
-	float: right;
-	border-radius: 100px;
-	position: relative;
-}
 
-label:after {
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: 3px;
-	width: 20px;
-	height: 20px;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
-}
+  .mobileline{
+    display: none;
+  }
+  
+  .facebook.background-white:hover{
+    background: hsl(227, 47%, 92%);
+  }
+  .twitter.background-white:hover{
+    background: hsl(227, 47%, 92%);
+  }
+  .instagram.background-white:hover{
+    background: hsl(227, 47%, 92%);
+  }
+  .youtube.background-white:hover{
+    background: hsl(227, 47%, 92%);
+  }
+  .overview-items.background-white:hover{
+    background: hsl(227, 47%, 92%);
+  }
+  .facebook.dark-card:hover{
+    background: hsl(228, 28%, 24%);
+  }
+  .twitter.dark-card:hover{
+    background: hsl(228, 28%, 24%);
+  }
+  .instagram.dark-card:hover{
+    background: hsl(228, 28%, 24%);
+  }
+  .youtube.dark-card:hover{
+    background: hsl(228, 28%, 24%);
+  }
+  .overview-items.dark-card:hover{
+    background: hsl(228, 28%, 24%);
+  }
 
-input:checked + label {
-	background: var(--color-headings);
-}
-
-input:checked + label:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
-}
