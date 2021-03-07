@@ -3,14 +3,33 @@
   margin: 0;
   padding: 0;
 }
-.Container{
+label{
   position: absolute;
-  display: flex;
-  top: 5vw;
- right: 5vw;
+  width: 3vw;
+  height: 1.5vw;
+  right: 5vw;
+  top: 3vw;
+  border: 2px solid hsl(230, 22%, 74%);
+  border-radius: 1vw;
+  background-color: hsl(230, 22%, 74%);
 }
-.dark-mode{
+label::before{
   position: absolute;
+  content: " ";
+  width: 1.1vw;
+  height: 1.1vw;
+  right: 0.05vw;
+  top: 0.05vw;
   cursor: pointer;
-  background-color: hsl(227, 47%, 96%);
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+  transition: 0.4s;
+}
+label.on::before{
+ left: 0.1vw;
+background-color:   hsl(230, 17%, 14%);
+}
+body.of{
+background:black;
+color: white;
 }
