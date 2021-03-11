@@ -13,13 +13,13 @@ body{
 
   .block{
     z-index: -10;
-    height: 28%;
-    width: 100%;
+    height: 15vw;
+    width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
   }
   .block-bg{
     background: hsl(225, 100%, 98%);
@@ -41,8 +41,9 @@ body{
     color: white;
   }
   .card{
-    width: 70%;
-    margin: 30px auto auto;
+    width: 74vw;
+    margin: 2.5vw auto auto;
+    font-size: 1.2vw;
   }
   .header{
     display: grid;
@@ -53,7 +54,7 @@ body{
   }
   .head2{
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 0.9vw;
   }
   .darkmode{
     position: relative;
@@ -61,81 +62,91 @@ body{
   .text1{
     display: inline-block;
     position: absolute;
-    margin: 0;
-    top: 40%;
-    right: 9%;
+    top: 2.5vw;
+    right: 3.8vw;
   }
   .modeswitch{
     display: inline-block;
     position: absolute;
     margin: 0;
-    top: 55%;
+    top: 2.3vw;
     right: 0;
   }
   .socialacc{
-    margin-top: 20px;
+    margin-top: 2vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 2vw;
     text-align: center;
   }
   .facebook{
     /* background: hsl(227, 47%, 96%); */
-    border-top: solid 5px hsl(208, 92%, 53%);
-    border-radius: 5px;
+    border-top: solid 0.5vw hsl(208, 92%, 53%);
+    border-radius: 0.4vw;
+    padding: 1vw;
   }
   .twitter{
     /* background: hsl(227, 47%, 96%); */
-    border-top: solid 5px hsl(203, 89%, 53%);
-    border-radius: 5px;
+    border-top: solid 0.5vw hsl(203, 89%, 53%);
+    border-radius: 0.4;
+    padding: 1vw;
   }
   .instagram{
     position: relative;
     /* background: hsl(227, 47%, 96%); */
-    border-radius: 5px;
+    border-radius: 0.4px;
+    padding: 1vw;
   }
   .line{
     position: absolute;
     background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-    height: 5px;
-    width: 100%;
+    height: 0.5vw;
+    width: 17.15vw;
     top: 0;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    left: -0vw;
+    border-top-right-radius: 0.4vw;
+    border-top-left-radius: 0.4vw;
   }
   .youtube{
     /* background: hsl(227, 47%, 96%); */
-    border-top: solid 5px hsl(348, 97%, 39%);
-    border-radius: 5px;
+    border-top: solid 0.5vw hsl(348, 97%, 39%);
+    border-radius: 0.4vw;
+    padding: 1vw;
   }
   .t1{
-    font-size: 14px;
+    padding-bottom: 0.8vw;
+    font-size: 1vw;
     position: relative;
   }
   .logo{
     position: relative;
-    top: 5px;
-    right: 5px;
+    top: 0.5vw;
+    right: 0.6vw;
+    height: 1.4vw;
   }
   .t2{
-    margin: 0 auto;
-    font-size: 3.5rem;
+    margin:  auto;
+    font-size: 3vw;
     font-weight: 700;
+    padding-bottom: 0.8vw;
   }
   .t3{
-    font-size: 1rem;
+    font-size: 1vw;
     margin-top: 0;
     font-weight: 100;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.3vw;
+    margin-bottom: 0.8vw;
   }
   .t4{
-    font-size: 12px;
+    font-size: 0.8vw;
     font-weight: 700;
+    margin-bottom: 0.5vw;
   }
   .red{
     color: hsl(356, 69%, 56%);
     font-weight: 700;
+    
   }
   .green{
     color: hsl(163, 72%, 41%);
@@ -144,49 +155,55 @@ body{
   .arrow{
     display: inline-block;
     position: relative;
-    bottom: 2px;
-    right: 2px;
   }
   .bold{
-    font-size: 2rem;
+    font-size: 2.4vw;
     font-weight: 700;
     margin: 0;
   }
   .shade{
     color: hsl(228, 12%, 44%);
     font-weight: 600;
+    padding-bottom: 1vw;
   }
   .subhead{
-    margin: 40px auto 20px;
-    font-size: 1.5rem;
+    margin-top: 2vw;
+    margin-bottom: 1.3vw;
+    font-size: 1.8vw;
     color: hsl(228, 12%, 44%);
     font-weight: 700;
   }
   .overview{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    width: 74vw;
   }
   .overview-items{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
+   padding: 1vw;
     /* background: hsl(227, 47%, 96%); */
-    border-radius: 5px;
+    border-radius: 0.5vw;
+    width: 16.5vw;
   }
   .background-white{
     background: hsl(227, 47%, 96%);
+    width: 16.5vw;
   }
   .align-right{
     text-align: right;
+  }
+  .logo1{
+    height: 1.6vw;
   }
   .attribution{
     position: absolute;
     display: block;
     width: 99%;
     margin: auto;
-    bottom: 10px;
+    bottom: 1vw;
   }
   
   /* Togglebutton */
@@ -195,8 +212,8 @@ body{
   .switch {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 24px;
+    width: 3vw;
+    height: 1.7vw;
   }
   
   /* Hide default HTML checkbox */
@@ -227,10 +244,10 @@ body{
   .slider:before {
     position: absolute;
     content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
+    height:1.17vw;
+    width: 1.17vw;
+    left: 0.3vw;
+    bottom: 0.3vw;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -243,20 +260,20 @@ body{
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 0.1vw #2196F3;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
+    -webkit-transform: translateX(1.17vw);
+    -ms-transform: translateX(1.17vw);
+    transform: translateX(1.17vw);
   }
   
   
   /* Rounded sliders */
 
   .slider.round {
-    border-radius: 14px;
+    border-radius: 1vw;
   }
   
   .slider.round:before {
@@ -304,11 +321,11 @@ body{
   /*
      Media Query
                  */
-  @media (max-width: 390px) {
+  @media (max-width: 400px) {
     .block{
       z-index: -10;
-      height: 38%;
-      width: 100%;
+      height: 35vw;
+      width: 100vw;
       position: absolute;
       top: 0;
       left: 0;
@@ -316,7 +333,7 @@ body{
       border-bottom-right-radius: 20px;
     }
     .card{
-      width: 85%;
+      width: 85vw;
       margin: auto;
     }
     .header{
@@ -325,7 +342,7 @@ body{
     }
     .mobileline{
       display: block;
-      width: 99%;
+      width: 99vw;
       margin: auto;
       height: 1px;
       border-radius: 1px;
