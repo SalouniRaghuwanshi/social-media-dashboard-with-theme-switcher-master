@@ -333,7 +333,7 @@ body{
     
       .block{
         z-index: -10;
-        height: 30vw;
+        height: 50vw;
         width: 100vw;
         position: absolute;
         top: 0;
@@ -352,10 +352,11 @@ body{
       }
       .head1{
         margin-bottom: 0;
+        font-size: 6vw;
       }
       .head2{
         margin-top: 0;
-        font-size: 2vw;
+        font-size: 1.5vw;
       }
       .mobileline{
         display: block;
@@ -470,7 +471,7 @@ body{
       .subhead{
         padding-top: 6vw;
         padding-bottom: 3vw;
-        font-size: 5vw;
+        font-size: 2vw;
         color: hsl(228, 12%, 44%);
         font-weight: 700;
         width: 80vw;
