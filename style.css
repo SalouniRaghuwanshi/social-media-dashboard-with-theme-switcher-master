@@ -43,7 +43,6 @@ body{
   .card{
     width: 74vw;
     margin: 2.5vw auto auto;
-    font-size: 1.2vw;
   }
   .header{
     display: grid;
@@ -345,7 +344,6 @@ body{
       
       .card{
         width: 85vw;
-        font-size: 3vw;
       }
       .header{
         display: grid;
@@ -510,7 +508,7 @@ body{
         width: 99%;
         margin: auto;
         bottom: 1vw;
-        top:780vw
+        top:800vw
       }
       
       /* Togglebutton */
