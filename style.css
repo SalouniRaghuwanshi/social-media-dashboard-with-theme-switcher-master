@@ -322,79 +322,270 @@ body{
      Media Query
                  */
   @media (max-width: 400px) {
-    .block{
-      z-index: -10;
-      height: 35vw;
-      width: 100vw;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-    .card{
-      width: 85vw;
-      margin: auto;
-    }
-    .header{
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-    .mobileline{
-      display: block;
-      width: 99vw;
-      margin: auto;
-      height: 1px;
-      border-radius: 1px;
-      background: hsl(228, 12%, 44%);
-    }
-    .darkmode{
-      position: relative;
-      margin: 20px auto;
-    }
-    .text1{
-      display: inline-block;
-      position: relative;
+    
+    body{
       margin: 0;
-      top: 1px;
-      right: 105px;
+      padding: 0;
+      font-weight:  400, 700;
+      font-family: Inter;
     }
-    .modeswitch{
-      display: inline-block;
-      position: absolute;
-      margin: auto;
-      top: auto;
-      right: auto;
-      left: 150px;
-    }
-    .darks.shade{
-      margin: 0;
-    }
-    .darks.dark-white{
-      margin: 0;
-    }
-    .socialacc{
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-row-gap: 20px;
-      text-align: center;
-    }
-    .overview{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-    }
-    .attribution{
-      position: relative;
-      display: block;
-      width: 99%;
-      margin: auto;
-      bottom: 0;
-    }
-    .subhead{
-      margin: 50px auto 20px;
-    }
+    
+      .block{
+        z-index: -10;
+        height: 30vw;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom-left-radius: 6vw;
+        border-bottom-right-radius: 6vw;
+      }
+      
+      .card{
+        width: 85vw;
+        font-size: 3vw;
+      }
+      .header{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .head1{
+        margin-bottom: 0;
+      }
+      .head2{
+        margin-top: 0;
+        font-size: 2vw;
+      }
+      .mobileline{
+        display: block;
+        width: 99%;
+        margin: auto;
+        height: 0.4vw;
+        border-radius: 1px;
+        background: hsl(228, 12%, 44%);
+      }
+      .darkmode{
+        position: relative;
+      }
+      .text1{
+        display: inline-block;
+        position: absolute;
+        top: 5vw;
+        left: 2vw;
+        margin-bottom: 5vw;
+      }
+      .modeswitch{
+        display: inline-block;
+        position: absolute;
+        margin: 0;
+        top: 5vw;
+        right: 7vw;
+        margin-bottom: 5vw;
+      }
+      .socialacc{
+        margin-top: 12vw;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-row-gap: 5vw;
+        text-align: center;
+      }
+      .facebook{
+        /* background: hsl(227, 47%, 96%); */
+        border-top: solid 1.5vw hsl(208, 92%, 53%);
+        border-radius: 2vw;
+        padding: 2vw;
+      }
+      .twitter{
+        /* background: hsl(227, 47%, 96%); */
+        border-top: solid 1.5vw hsl(203, 89%, 53%);
+        border-radius: 2vw;
+        padding: 2vw;
+      }
+      .instagram{
+        position: relative;
+        /* background: hsl(227, 47%, 96%); */
+        border-radius:2vw;
+        padding: 2vw;
+      }
+      .line{
+        position: absolute;
+        background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+        height: 1.5vw;
+        width: 80vw;
+        top: 0;
+        left: -0vw;
+        border-top-right-radius: 2vw;
+        border-top-left-radius: 2vw;
+      }
+      .youtube{
+        /* background: hsl(227, 47%, 96%); */
+        border-top: solid 2vw hsl(348, 97%, 39%);
+        border-radius: 2vw;
+        padding: 4vw;
+      }
+      .t1{
+        padding-bottom: 3vw;
+        font-size: 4vw;
+        position: relative;
+      }
+      .logo{
+        position: relative;
+        top: 2.5vw;
+        right: 3vw;
+        height: 6vw;
+      }
+      .t2{
+        margin:  auto;
+        padding-top: 3vw;
+        font-size: 10vw;
+        font-weight: 700;
+        padding-bottom: 3vw;
+      }
+      .t3{
+        font-size: 3.5vw;
+        margin-top: 0;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 0.3vw;
+        margin-bottom: 3vw;
+      }
+      .t4{
+        font-size: 2.5vw;
+        font-weight: 700;
+        margin-bottom: 3vw;
+      }
+  
+      .bold{
+        font-size: 6vw;
+        font-weight: 700;
+        margin: 0;
+      }
+      .shade{
+        color: hsl(228, 12%, 44%);
+        font-weight: 600;
+        padding-bottom: 4vw;
+        font-size: 4vw;
+      }
+      .subhead{
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+        font-size: 5vw;
+        color: hsl(228, 12%, 44%);
+        font-weight: 700;
+        width: 80vw;
+        margin: auto;
+      }
+      .overview{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-row-gap: 2vw;
+        width: 80vw;
+        margin: auto;
+      }
+      .overview-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       padding: 4vw;
+        /* background: hsl(227, 47%, 96%); */
+        border-radius: 2vw;
+        width: 80vw;
+      }
+      .background-white{
+        background: hsl(227, 47%, 96%);
+        width: 80vw;
+        margin: auto;
+      }
+      .align-right{
+        text-align: right;
+      }
+      .logo1{
+        height: 6vw;
+      }
+      .attribution{
+        position: absolute;
+        display: block;
+        width: 99%;
+        margin: auto;
+        bottom: 1vw;
+        top:770vw
+      }
+      
+      /* Togglebutton */
+      /* The switch - the box around the slider */
+      
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 9vw;
+        height: 5vw;
+      }
+      
+      /* Hide default HTML checkbox */
+      
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      /* The slider */
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      .slider:hover{
+        background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height:4vw;
+        width: 4vw;
+        left: 0.6vw;
+        bottom: 0.6vw;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        /* background-color: #2196F3; */
+      
+        background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 0.4vw #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(3.5vw);
+        -ms-transform: translateX(3.5vw);
+        transform: translateX(3.5vw);
+      }
+      
+      
+      /* Rounded sliders */
+    
+      .slider.round {
+        border-radius: 4vw;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+  
+      
+     
+   
   }
 
